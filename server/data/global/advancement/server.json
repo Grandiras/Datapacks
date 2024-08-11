@@ -1,8 +1,0 @@
-{
-    "parent": "global:root",
-    "criteria": {
-        "trigger": {
-            "trigger": "minecraft:tick"
-        }
-    }
-}
