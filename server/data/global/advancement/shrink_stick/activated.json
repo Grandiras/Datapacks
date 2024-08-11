@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "grandiras:server/shrink_stick_activated"
+        "function": "grandiras:server/shrink_stick/activate"
     }
 }
