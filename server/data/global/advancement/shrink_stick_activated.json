@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "shrink_stick_activated": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "food": {
+                            "nutrition": 0,
+                            "saturation": 0,
+                            "eat_seconds": 1000000,
+                            "can_always_eat": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "grandiras:server/shrink_stick_activated"
+    }
+}

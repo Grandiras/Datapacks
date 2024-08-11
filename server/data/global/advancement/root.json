@@ -1,0 +1,22 @@
+{
+    "display": {
+        "title": "Mystery",
+        "description": "What could this be?",
+        "icon": {
+            "id": "minecraft:enchanted_book",
+            "components": {
+                "enchantments": {
+                    "unbreaking": 10
+                }
+            }
+        },
+        "background": "minecraft:textures/block/gray_concrete.png",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

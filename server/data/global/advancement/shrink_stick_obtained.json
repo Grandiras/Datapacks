@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": "Wanna be small?",
+        "description": "Obtained the Shrink Stick",
+        "icon": {
+            "id": "minecraft:stick",
+            "components": {
+                "enchantments": {
+                    "unbreaking": 10
+                }
+            }
+        },
+        "background": "minecraft:textures/block/gray_concrete.png",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "global:root",
+    "criteria": {
+        "shrink_stick_obtained": {
+            "trigger": "minecraft:crafter_recipe_crafted",
+            "conditions": {
+                "recipe_id": "stick_from_bamboo_item"
+            }
+        }
+    },
+    "rewards": {
+        "function": "grandiras:server/shrin_stick_obtained"
+    }
+}

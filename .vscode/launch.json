@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Micha/AppData/Roaming/com.modrinth.theseus/profiles/Fabulously Optimized/saves/Datapacks/datapacks/server/data/grandiras/functions",
+      "program": "c:/Users/Micha/AppData/Roaming/com.modrinth.theseus/profiles/Fabulously Optimized/saves/Datapacks/datapacks/server/data/grandiras/functions/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
