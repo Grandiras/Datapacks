@@ -10,7 +10,6 @@
                 }
             }
         },
-        "background": "minecraft:textures/block/gray_concrete.png",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true

@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": "Not so crab after all, huh?",
+        "description": "Extends your reach to 7 blocks",
+        "icon": {
+            "id": "minecraft:shears",
+            "components": {
+                "enchantments": {
+                    "unbreaking": 10
+                }
+            }
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "frame": "goal"
+    },
+    "parent": "global:root",    
+    "criteria": {
+        "crab_claw_obtained": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "custom_data": {
+                                "crab_claw": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 10000
+    }
+}
