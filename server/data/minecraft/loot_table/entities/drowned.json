@@ -78,7 +78,14 @@
                     "[{\"text\":\"Needs to be in the offhand to function\",\"italic\":false}]"
                   ],
                   "custom_data": {
-                    "crab_claw": true
+                    "is_crab_claw": true
+                  },
+                  "tool": {
+                    "default_mining_speed": 0.0,
+                    "rules": []
+                  },
+                  "unbreakable": {
+                    "show_in_tooltip": true
                   }
                 }
               }
@@ -86,13 +93,11 @@
           }
         ],
         "conditions": [
-          {
-            "condition": "minecraft:killed_by_player"
-          },
+          
           {
             "condition": "minecraft:random_chance_with_enchanted_bonus",
             "enchantment": "minecraft:looting",
-            "unenchanted_chance": 0.01,
+            "unenchanted_chance": 1,
             "enchanted_chance": {
               "type": "minecraft:linear",
               "base": 0.015,

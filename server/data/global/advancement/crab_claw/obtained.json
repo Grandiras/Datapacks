@@ -24,7 +24,7 @@
                     {
                         "components": {
                             "custom_data": {
-                                "crab_claw": true
+                                "is_crab_claw": true
                             }
                         }
                     }

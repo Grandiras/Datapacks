@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": "Hammer Time!",
+        "description": "It's your world, not mine...",
+        "icon": {
+            "id": "minecraft:mace",
+            "components": {
+                "enchantments": {
+                    "unbreaking": 10
+                }
+            }
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "frame": "goal"
+    },
+    "parent": "global:root",
+    "criteria": {
+        "excavator_obtained": {
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "grandiras:server/excavator/obtain"
+    }
+}
