@@ -1,3 +1,5 @@
+playsound entity.breeze.jump block @s ~ ~ ~ 1 1 1
+
 # if user is already small, make them normal size
 execute as @s[nbt={attributes:[{id:"minecraft:generic.scale",base:0.2d}]}] run summon area_effect_cloud ~ ~ ~ {Particle:{type:explosion},Radius:1,Duration:2}
 execute as @s[nbt={attributes:[{id:"minecraft:generic.scale",base:0.2d}]}] run return run attribute @s generic.scale base set 1.0

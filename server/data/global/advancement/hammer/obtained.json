@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "grandiras:server/excavator/obtain"
+        "function": "grandiras:server/hammer/obtain"
     }
 }
