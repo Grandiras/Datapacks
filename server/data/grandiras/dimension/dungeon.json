@@ -1,0 +1,11 @@
+{
+    "type": "grandiras:dungeon_type",
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [],
+            "structure_overrides": [],
+            "biome": "the_void"
+        }
+    }
+}
