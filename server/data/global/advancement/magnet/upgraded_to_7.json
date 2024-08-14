@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "Not so crab after all, huh?",
-        "description": "Extends your reach to 7 blocks",
+        "title": "Magnetic Personality Stage 3",
+        "description": "Upgraded the Magnet to Level 3",
         "icon": {
-            "id": "minecraft:shears",
+            "id": "minecraft:heavy_core",
             "components": {
                 "enchantments": {
                     "unbreaking": 10
@@ -12,19 +12,18 @@
         },
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true,
-        "frame": "goal"
+        "frame": "challenge"
     },
-    "parent": "global:root",    
+    "parent": "global:magnet/upgraded_to_5",
     "criteria": {
-        "crab_claw_obtained": {
+        "magnet_upgraded_to_7": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
                         "components": {
                             "custom_data": {
-                                "is_crab_claw": true
+                                "is_magnet_third_stage": true
                             }
                         }
                     }
@@ -33,6 +32,6 @@
         }
     },
     "rewards": {
-        "experience": 10000
+        "experience": 100000
     }
 }

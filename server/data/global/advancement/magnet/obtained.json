@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "Not so crab after all, huh?",
-        "description": "Extends your reach to 7 blocks",
+        "title": "Magnetic Personality",
+        "description": "Obtained the Magnet",
         "icon": {
-            "id": "minecraft:shears",
+            "id": "minecraft:heavy_core",
             "components": {
                 "enchantments": {
                     "unbreaking": 10
@@ -12,19 +12,18 @@
         },
         "show_toast": true,
         "announce_to_chat": true,
-        "hidden": true,
-        "frame": "goal"
+        "hidden": true
     },
-    "parent": "global:root",    
+    "parent": "global:root",
     "criteria": {
-        "crab_claw_obtained": {
+        "magnet_obtained": {
             "trigger": "inventory_changed",
             "conditions": {
                 "items": [
                     {
                         "components": {
                             "custom_data": {
-                                "is_crab_claw": true
+                                "is_magnet": true
                             }
                         }
                     }
