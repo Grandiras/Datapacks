@@ -12,6 +12,6 @@ advancement revoke @s only global:shrink_stick/activated
 kill @e[type=armor_stand,tag=ray_hit]
 
 # schedule a function that broadcasts a message to all players every 30 mins
-schedule function grandiras:server/announce 180s
+schedule function grandiras:server/core/announce 180s
 
 tellraw @a {"text":"[Server] ","color":"gold","extra":[{"text":"Server datapack reloaded!","color":"green"}]}
