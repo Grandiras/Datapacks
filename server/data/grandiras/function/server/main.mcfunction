@@ -3,3 +3,5 @@ scoreboard players add @a timer 1
 execute as @a if score @s timer matches 4.. run function grandiras:server/core/lazy_update
 
 execute as @a run function grandiras:server/hammer/check_use
+
+kill @e[type=armor_stand,tag=ray_hit]
