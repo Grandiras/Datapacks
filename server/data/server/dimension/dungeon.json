@@ -1,5 +1,5 @@
 {
-    "type": "grandiras:dungeon_type",
+    "type": "server:dungeon_type",
     "generator": {
         "type": "flat",
         "settings": {

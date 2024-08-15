@@ -22,6 +22,6 @@
         }
     },
     "rewards": {
-        "function": "grandiras:server/hammer/obtain"
+        "function": "server:hammer/obtain"
     }
 }

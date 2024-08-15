@@ -20,6 +20,6 @@
         }
     },
     "rewards": {
-        "function": "grandiras:server/shrink_stick/activate"
+        "function": "server:shrink_stick/activate"
     }
 }

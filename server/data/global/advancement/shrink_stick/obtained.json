@@ -24,6 +24,6 @@
         }
     },
     "rewards": {
-        "function": "grandiras:server/shrink_stick/obtain"
+        "function": "server:shrink_stick/obtain"
     }
 }

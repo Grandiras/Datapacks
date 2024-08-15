@@ -39,4 +39,4 @@ execute if score broadcast random_number matches 24 run tellraw @a {"text":"[Bro
 execute if score broadcast random_number matches 25 run tellraw @a {"text":"[Broadcast] ","color":"gold","extra":[{"text":"To make a long story short... it's a game.","color":"white"}]}
 execute if score broadcast random_number matches 26 run tellraw @a {"text":"[Broadcast] ","color":"gold","extra":[{"text":"To the moon and back.","color":"white"}]}
 
-schedule function grandiras:server/core/announce 3600s
+schedule function server:core/announce 3600s

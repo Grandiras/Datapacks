@@ -1,6 +1,10 @@
 # ToDos
 
-### Fix The Hammer Activating When Hitting A Player
+### Fix Hammer
+- activates when hitting player
+- only mine connected blocks
+
+### Add Excavator
 
 ### Figure Out Structures
 
