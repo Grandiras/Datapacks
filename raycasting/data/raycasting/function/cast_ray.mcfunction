@@ -1,3 +1,4 @@
+# If the current block is not air, we hit a block
 execute unless block ~ ~ ~ air run return run function raycasting:ray_hit
 
 # Progress the ray distance by 0.1 block
