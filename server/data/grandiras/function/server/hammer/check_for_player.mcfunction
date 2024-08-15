@@ -1,4 +1,2 @@
-# store the current player's id in the temporary storage
-execute as @s run function player_id:store_player_id
-
-execute as @s run function grandiras:server/hammer/check_for_armor_stand with storage player_id
+scoreboard players operation current player_id = @s player_id
+execute as @e[type=armor_stand,tag=ray_hit] if score @s player_id = current player_id as @s at @s positioned ~ ~ ~ run function grandiras:server/hammer/mine_chunk

@@ -1,1 +1,0 @@
-$summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b,Tags:["ray_hit", "ray_hit_$(current_id)"]}

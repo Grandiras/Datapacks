@@ -1,1 +1,0 @@
-execute store result storage player_id current_id int 1 run scoreboard players get @s player_id
