@@ -1,17 +1,17 @@
 # ToDos
 
-### Fix Hammer
-- activates when hitting player
-- only mine connected blocks
+### Fix Hammer Mechanics
+- Hammer activates its effect when hitting a player
+- Hammer should only mine blocks that are directly connected
 
-### Add Excavator
+### Implement Excavator Tool
 
-### Figure Out Structures
+### Determine Structure Generation
 
-### Explore The Possibility To Use Enchantments For The Crab Claw And The Shrink Stick
+### Enchantments for Crab Claw and Shrink Stick
 
-### More Content
-- more items randomly obtainable
-- more ways to get hints
-- broader range of content
-- more consistency
+### Expand Game Content
+- More items randomly obtainable
+- More ways to get hints
+- Broader range of content
+- Ensure consistent game mechanics across all tools and items
