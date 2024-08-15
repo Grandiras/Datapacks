@@ -1,5 +1,7 @@
 # ToDos
 
+### Fix The Hammer Activating When Hitting A Player
+
 ### Figure Out Structures
 
 ### Explore The Possibility To Use Enchantments For The Crab Claw And The Shrink Stick

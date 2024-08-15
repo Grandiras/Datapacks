@@ -6,7 +6,7 @@ scoreboard objectives add mined_with_hammer used:mace
 # clear the advancements to prevent malfunction
 advancement revoke @s only global:shrink_stick/activated
 
-# schedule a function that broadcasts a message to all players every 60 mins
+# schedule a function that broadcasts a message to all players every 60 mins (first run in 3 mins)
 schedule function grandiras:server/core/announce 180s
 
 # we're finished
