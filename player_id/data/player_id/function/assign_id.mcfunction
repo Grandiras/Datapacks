@@ -1,0 +1,3 @@
+scoreboard players reset player_id_counter player_id
+
+function player_id:search_for_id
