@@ -1,9 +1,6 @@
 # reset the shrink stick
 advancement revoke @s only global:shrink_stick/activated
 
-# check if a new ray needs to be casted
-execute if data entity @s SelectedItem.components."minecraft:custom_data".is_hammer run function grandiras:server/raycasting/start_ray
-
 # check if an item (a magnet? is in the offhand) to pull items towards the player
 execute if data entity @s Inventory[{Slot:-106b}] run function grandiras:server/magnet/pull_items
 

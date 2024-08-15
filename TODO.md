@@ -1,11 +1,5 @@
 # ToDos
 
-### Fix Hammer (again)
-- armor stand markers not cleared correctly
-- make armor stand markers player-bound instead of nearest
-
-### Offset Raycasting Into Helper Datapack
-
 ### Figure Out Structures
 
 ### More Content

@@ -1,0 +1,1 @@
+$execute at @e[type=armor_stand,tag=ray_hit_$(current_id),limit=1,sort=nearest] positioned ~ ~ ~ run function grandiras:server/hammer/mine_chunk
