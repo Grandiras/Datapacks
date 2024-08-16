@@ -7,6 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -58,3 +60,9 @@ jobs:
       - name: Reload server
         run: |
           mcrcon -H ${{ secrets.SERVER_IP }} -P ${{ secrets.SERVER_PORT }} -p ${{ secrets.SERVER_PASSWORD }} "/reload"
+
+      # Publish the first section of the release notes from the CHANGELOG.md file to a Discord webhook
+      - name: Publish release notes
+        run: |
+          first_section=$(awk '/^#/{if (p) exit; p=1} p' CHANGELOG.md)
+          curl -X POST -H 'Content-type: application/json' --data "{\"content\":\"${first_section}\"}" ${{ secrets.DISCORD_WEBHOOK }}
