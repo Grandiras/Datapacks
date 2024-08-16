@@ -37,6 +37,12 @@ jobs:
             curl -T $file -u ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_SERVER }}/world/datapacks/$file
           done
 
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git build-essential
+
       # Install mcrcon
       - name: Install mcrcon
         run: |
