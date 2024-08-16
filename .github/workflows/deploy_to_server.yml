@@ -30,11 +30,6 @@ jobs:
             zip -r $dir.zip $dir
           done
 
-      # create a ftp connection to the server
-      - name: Setup FTP connection
-        run: |
-          ftp ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}
-
       # copies the created zip files to the server under /world/datapacks
       - name: Copy zip files to server
         run: |
