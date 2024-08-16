@@ -37,7 +37,7 @@ jobs:
             curl -T $file -u ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_SERVER }}/world/datapacks/$file
           done
 
-      # make a rcon connection to the server and execute /reload (minecraft specific)
+      # make a rcon connection to the server (with password) and execute /reload (minecraft server command)
       - name: Reload server
         run: |
-          echo "/reload" | nc ${{ secrets.SERVER_IP }} ${{ secrets.SERVER_PORT }}
+          echo "/reload" | nc -q 1 ${{ secrets.SERVER_IP }} ${{ secrets.SERVER_PORT }} -w 1 -u -p ${{ secrets.SERVER_PASSWORD }}
