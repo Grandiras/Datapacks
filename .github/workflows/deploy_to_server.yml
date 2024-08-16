@@ -30,6 +30,11 @@ jobs:
             zip -r ${dir%/}.zip $dir
           done
 
+      # List the contents of the FTP server directory (for debugging)
+      - name: List FTP directory contents (for debugging)
+        run: |
+          curl -u ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_SERVER }}/world/datapacks/
+
       # copies the created zip files to the server under /world/datapacks
       - name: Copy zip files to server
         run: |
