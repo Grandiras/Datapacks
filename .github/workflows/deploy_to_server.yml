@@ -46,8 +46,10 @@ jobs:
       # Install mcrcon
       - name: Install mcrcon
         run: |
-          sudo apt-get update
-          sudo apt-get install -y mcrcon
+          git clone https://github.com/Tiiffi/mcrcon.git
+          cd mcrcon
+          make
+          sudo make install
   
       # Reload the server
       - name: Reload server
