@@ -27,7 +27,7 @@ jobs:
       - name: Create zip files
         run: |
           for dir in $(ls -d */ | grep -v '^\..*'); do
-            zip -r ${dir%/}.zip $dir
+            zip -rj ${dir%/}.zip $dir
           done
 
       # copies the created zip files to the server under /world/datapacks
