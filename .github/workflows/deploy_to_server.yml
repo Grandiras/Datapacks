@@ -37,7 +37,13 @@ jobs:
             curl -T $file -u ${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }} ftp://${{ secrets.FTP_SERVER }}/world/datapacks/$file
           done
 
-      # make a rcon connection to the server (with password) and execute /reload (minecraft server command)
+      # Install mcrcon
+      - name: Install mcrcon
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mcrcon
+  
+      # Reload the server
       - name: Reload server
         run: |
-          echo "/reload" | nc -q 1 -u ${{ secrets.SERVER_IP }} ${{ secrets.SERVER_PORT }} -p ${{ secrets.SERVER_PASSWORD }}
+          mcrcon -H ${{ secrets.SERVER_IP }} -P ${{ secrets.SERVER_PORT }} -p ${{ secrets.SERVER_PASSWORD }} "/reload"
