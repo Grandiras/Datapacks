@@ -27,7 +27,7 @@ jobs:
       - name: Create zip files
         run: |
           for dir in $(ls -d */ | grep -v '^\..*'); do
-            zip -r $dir.zip $dir
+            zip -r ${dir%/}.zip $dir
           done
 
       # copies the created zip files to the server under /world/datapacks
@@ -40,4 +40,4 @@ jobs:
       # make a rcon connection to the server (with password) and execute /reload (minecraft server command)
       - name: Reload server
         run: |
-          echo "/reload" | nc -q 1 ${{ secrets.SERVER_IP }} ${{ secrets.SERVER_PORT }} -w 1 -u -p ${{ secrets.SERVER_PASSWORD }}
+          echo "/reload" | nc -q 1 -u ${{ secrets.SERVER_IP }} ${{ secrets.SERVER_PORT }} -p ${{ secrets.SERVER_PASSWORD }}
