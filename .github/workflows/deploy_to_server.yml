@@ -32,14 +32,8 @@ jobs:
 
       # create a ftp connection to the server
       - name: Setup FTP connection
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          remote-dir: ./
-          exclude: .git,.github
+        run: |
+          ftp ftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }}
 
       # copies the created zip files to the server under /world/datapacks
       - name: Copy zip files to server
