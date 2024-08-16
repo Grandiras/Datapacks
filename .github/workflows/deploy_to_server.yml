@@ -65,4 +65,5 @@ jobs:
       - name: Publish release notes
         run: |
           first_section=$(awk '/^#/{if (p) exit; p=1} p' CHANGELOG.md)
-          curl -X POST -H 'Content-type: application/json' --data "{\"content\":\"${first_section}\"}" ${{ secrets.DISCORD_WEBHOOK }}
+          json_payload=$(jq -n --arg content "$first_section" '{"content": $content}')
+          curl -X POST -H 'Content-type: application/json' --data "$json_payload" ${{ secrets.DISCORD_WEBHOOK }}
