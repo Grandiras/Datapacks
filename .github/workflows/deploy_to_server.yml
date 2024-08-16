@@ -24,10 +24,13 @@ jobs:
       - uses: actions/checkout@v4
 
       # Creates a zip file out of each of the directories in this repo (excluding directories that start with a dot)
+      # Creates a zip file out of each of the directories in this repo (excluding directories that start with a dot)
       - name: Create zip files
         run: |
           for dir in $(ls -d */ | grep -v '^\..*'); do
-            zip -r ${dir%/}.zip $dir/*
+            cd $dir
+            zip -r ../${dir%/}.zip *
+            cd ..
           done
 
       # copies the created zip files to the server under /world/datapacks
