@@ -1,3 +1,6 @@
+# if the player already has a hammer, do nothing
+execute if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{is_hammer:true}}}]}] run return fail
+
 give @s mace[unbreakable={show_in_tooltip:true}, \
              attribute_modifiers=[{type:generic.attack_damage, \
                                    id:"generic.attack_damage", \
