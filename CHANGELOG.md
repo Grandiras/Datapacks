@@ -1,3 +1,7 @@
+# Version 0.3.1
+- Fixed advancement visibility, so they are now visible in the game (those, that should be)
+- Optimized deployment process
+
 # Version 0.3.0
 - Optimized the ray hit armor stands, so they teleport to the new location instead of being killed and spawned again
 - Added new hidden content to discover (it's actually visible in the game)
