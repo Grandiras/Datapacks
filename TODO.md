@@ -1,11 +1,5 @@
 # ToDos
 
-### Fix Hammer Mechanics
-- Hammer activates its effect when hitting a player
-- Hammer should only mine blocks that are directly connected
-
-### Implement Excavator Tool
-
 ### Determine Structure Generation
 
 ### Enchantments for Crab Claw and Shrink Stick

@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": "A true chopper arrived!",
+        "description": "No, not a bike, just wood.",
+        "icon": {
+            "id": "minecraft:oak_log",
+            "components": {
+                "custom_model_data": 1
+            }
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "frame": "challenge"
+    },
+    "parent": "global:excavator/obtained",
+    "criteria": {
+        "tree_chopper_obtained": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "custom_data": {
+                                "is_tree_chopper": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "server:tree_chopper/obtain"
+    }
+}

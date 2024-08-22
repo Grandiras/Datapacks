@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": "Let's get dirty!",
+        "description": "I don't dig it...",
+        "icon": {
+            "id": "minecraft:netherite_shovel",
+            "components": {
+                "enchantments": {
+                    "unbreaking": 10
+                }
+            }
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "frame": "goal"
+    },
+    "parent": "global:hammer/obtained",
+    "criteria": {
+        "excavator_obtained": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "custom_data": {
+                                "is_excavator": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "server:excavator/obtain"
+    }
+}
