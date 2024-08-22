@@ -11,3 +11,4 @@ execute as @a if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":
 
 execute as @a run function server:hammer/check_use
 execute as @a run function server:excavator/check_use
+execute as @a run function server:tree_chopper/check_use
