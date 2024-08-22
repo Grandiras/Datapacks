@@ -6,5 +6,8 @@ execute as @a if score @s timer matches 4.. run function server:core/lazy_update
 execute as @a if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{is_shrink_stick:true}}}]}] run advancement grant @s only global:shrink_stick/obtained
 # Same for the hammer
 execute as @a if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{is_hammer:true}}}]}] run advancement grant @s only global:hammer/obtained
+# Same for the excavator
+execute as @a if entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{is_excavator:true}}}]}] run advancement grant @s only global:excavator/obtained
 
 execute as @a run function server:hammer/check_use
+execute as @a run function server:excavator/check_use

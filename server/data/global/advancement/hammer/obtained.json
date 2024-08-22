@@ -13,11 +13,11 @@
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true,
-        "frame": "goal"
+        "frame": "task"
     },
     "parent": "global:root",
     "criteria": {
-        "excavator_obtained": {
+        "hammer_obtained": {
             "trigger": "impossible"
         }
     },
