@@ -5,7 +5,7 @@ execute unless block ~ ~ ~ #logs unless score chopping_started flag matches 1 ru
 scoreboard players set chopping_started flag 0
 
 # ux
-playsound block.wood.break block @a ~ ~ ~ 1 1 1
+playsound block.wood.break block @a ~ ~ ~ 1 1
 particle wax_off ~ ~ ~ 0.5 0.5 0.5 1 10
 
 # actual chopping

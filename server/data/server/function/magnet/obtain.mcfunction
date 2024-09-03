@@ -1,4 +1,4 @@
-playsound block.amethyst_block.resonate block @a ~ ~ ~ 1 1 1
+playsound block.amethyst_block.resonate block @a ~ ~ ~ 1 1
 particle lava ~ ~ ~ 1 1 1 1 10
 
 kill @e[type=item,nbt={Item:{id:"minecraft:ancient_debris",count:1},OnGround:true}]
