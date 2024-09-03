@@ -1,6 +1,7 @@
-# Version 0.4.0
+# Version 0.3.2
 - Fixed display item for the "A true chopper arrived!" advancement
 - Fixed sound playback to no longer be global
+- Made the ray hit armor stands smaller
 
 # Version 0.3.1
 - Fixed advancement visibility, so they are now visible in the game (those, that should be)
