@@ -1,0 +1,15 @@
+{
+    "fallback": "empty",
+    "elements": [
+        {
+            "weight": 50,
+            "element": {
+                "element_type": "single_pool_element",
+                "processors": "empty",
+                "projection": "rigid",
+                "override_liquid_settings": "ignore_waterlogging",
+                "location": "server:empty_connections/empty_connection"
+            }
+        }
+    ]
+}

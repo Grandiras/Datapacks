@@ -1,4 +1,4 @@
-playsound entity.villager.trade block @a ~ ~ ~ 1 1 1
+playsound entity.villager.trade block @a ~ ~ ~ 1 1
 particle happy_villager ~ ~ ~ 1 1 1 1 10
 
 execute positioned ~ ~ ~ run summon item ~ ~ ~ {Item:{id:"minecraft:netherite_axe",count:1,components: {enchantments:{unbreaking:10}, \

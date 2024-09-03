@@ -1,4 +1,4 @@
-playsound block.rooted_dirt.break block @s ~ ~ ~ 1 1 1
+playsound block.rooted_dirt.break block @s ~ ~ ~ 1 1
 
 execute positioned ~-2 ~ ~-2 run function server:excavator/mine_block
 execute positioned ~-2 ~ ~-1 run function server:excavator/mine_block

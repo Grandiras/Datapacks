@@ -1,4 +1,4 @@
-playsound entity.ender_dragon.growl block @a ~ ~ ~ 1 1 1
+playsound entity.ender_dragon.growl block @a ~ ~ ~ 1 1
 particle dragon_breath ~ ~ ~ 0 0 0 0.05 100
 
 kill @e[type=item,nbt={Item:{id:"minecraft:heavy_core",count:1,components:{"minecraft:custom_data":{is_magnet_second_stage:true}}},OnGround:true}]

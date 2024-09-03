@@ -3,9 +3,11 @@
         "title": "A true chopper arrived!",
         "description": "No, not a bike, just wood.",
         "icon": {
-            "id": "minecraft:oak_log",
+            "id": "minecraft:netherite_axe",
             "components": {
-                "custom_model_data": 1
+                "enchantments": {
+                    "unbreaking": 10
+                }
             }
         },
         "show_toast": true,

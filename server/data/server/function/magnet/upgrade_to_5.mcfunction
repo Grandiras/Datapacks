@@ -1,4 +1,4 @@
-playsound entity.lightning_bolt.impact block @a ~ ~ ~ 1 1 1
+playsound entity.lightning_bolt.impact block @a ~ ~ ~ 1 1
 particle lava ~ ~ ~ 0 0 0 1 10
 
 kill @e[type=item,nbt={Item:{id:"minecraft:heavy_core",count:1,components:{"minecraft:custom_data":{is_magnet:true}}},OnGround:true}]
