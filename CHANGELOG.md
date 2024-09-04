@@ -1,6 +1,6 @@
 # Version 0.3.3
 - Increased the accuracy of the ray hit tests
-- Fixed the ray hit tests to no longer detect at non-solid blocks (like water) - this also fixes Riptide tridents
+- Fixed the ray hit tests to no longer detect non-solid blocks (like water) - this also fixes Riptide tridents
 
 # Version 0.3.2
 - Fixed display item for the "A true chopper arrived!" advancement
