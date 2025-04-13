@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Deployment
 
 # Controls when the workflow will run
 on:
@@ -23,7 +23,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Creates a zip file out of each of the directories in this repo (excluding directories that start with a dot)
       # Creates a zip file out of each of the directories in this repo (excluding directories that start with a dot)
       - name: Create zip files
         run: |
