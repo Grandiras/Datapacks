@@ -6,7 +6,7 @@ execute unless data entity @s SelectedItem.components."minecraft:custom_data".is
 
 # get the ray hit armor stand for the player and mine the chunk at it's position
 execute store result score tree_chopper_current player_id run scoreboard players get @s player_id
-execute as @e[type=armor_stand,tag=ray_hit] if score @s player_id = tree_chopper_current player_id as @s at @s positioned ~ ~ ~ run function server:tree_chopper/start_chopping
+execute as @e[type=armor_stand,tag=last_block_mined] if score @s player_id = tree_chopper_current player_id as @s at @s positioned ~ ~ ~ run function server:tree_chopper/start_chopping
 
 # reset the score
 scoreboard players set @s mined_with_tree_chopper 0

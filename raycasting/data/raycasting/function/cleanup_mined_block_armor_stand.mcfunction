@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=last_block_mined] if score @s player_id = current player_id run kill @s
