@@ -18,21 +18,10 @@
     "parent": "global:excavator/obtained",
     "criteria": {
         "tree_chopper_obtained": {
-            "trigger": "inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "components": {
-                            "custom_data": {
-                                "is_tree_chopper": true
-                            }
-                        }
-                    }
-                ]
-            }
+            "trigger": "impossible"
         }
     },
     "rewards": {
-        "function": "server:tree_chopper/obtain"
+        "function": "server:tree_chopper/drop"
     }
 }

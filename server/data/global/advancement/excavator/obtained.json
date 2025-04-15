@@ -18,21 +18,10 @@
     "parent": "global:hammer/obtained",
     "criteria": {
         "excavator_obtained": {
-            "trigger": "inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "components": {
-                            "custom_data": {
-                                "is_excavator": true
-                            }
-                        }
-                    }
-                ]
-            }
+            "trigger": "impossible"
         }
     },
     "rewards": {
-        "function": "server:excavator/obtain"
+        "function": "server:excavator/drop"
     }
 }

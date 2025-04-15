@@ -32,7 +32,5 @@
             }
         }
     },
-    "rewards": {
-        "experience": 10000
-    }
+    "rewards": {}
 }
